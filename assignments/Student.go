@@ -24,7 +24,7 @@ func (s *Student) CalculateAverage() float64 {
 	}
 }
 
-func Stud() {
+func main() {
 	var s1 Student
 	fmt.Println("Enter Name of Student: ")
 	fmt.Scan(&s1.Name)

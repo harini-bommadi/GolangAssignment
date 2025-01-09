@@ -1,6 +1,6 @@
 package main
 
-import "example.com/assignments"
+import assignments "example.com/assignment1"
 
 func main() {
 	assignments.Stud()

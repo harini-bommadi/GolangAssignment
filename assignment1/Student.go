@@ -1,6 +1,8 @@
 package assignments
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Student struct {
 	Name  string
@@ -14,8 +16,8 @@ func (s *Student) AddMark(newMark int) {
 
 func (s *Student) CalculateAverage() float64 {
 	sum := 0
-	for i := 0; i < len(s.Marks); i++ {
-		sum += s.Marks[i]
+	for i, _ := range s.Marks {
+		sum = sum + s.Marks[i]
 	}
 	if len(s.Marks) == 0 {
 		return 0

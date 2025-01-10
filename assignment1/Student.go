@@ -9,12 +9,12 @@ type Student struct {
 	Marks []int
 }
 
-func (s *Student) AddMark(newMark int) {
+func (s Student) AddMark(newMark int) {
 	s.Marks = append(s.Marks, newMark)
 	fmt.Println("Updated Marks: ", s.Marks)
 }
 
-func (s *Student) CalculateAverage() float64 {
+func (s Student) CalculateAverage() float64 {
 	sum := 0
 	for i, _ := range s.Marks {
 		sum = sum + s.Marks[i]

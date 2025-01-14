@@ -10,12 +10,7 @@ type Book struct {
 }
 
 func CreateBook(Title1, Author1 string, Pages1, CopiesAvailable1 int) *Book {
-	return &Book{
-		Title:           Title1,
-		Author:          Author1,
-		Pages:           Pages1,
-		CopiesAvailable: CopiesAvailable1,
-	}
+	return &Book{Title1, Author1, Pages1, CopiesAvailable1}
 }
 
 func (b Book) DisplayBooks() {

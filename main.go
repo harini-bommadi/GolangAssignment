@@ -20,4 +20,5 @@ func main() {
 	book2.ReturnBook()
 	book3.ReturnBook()
 	assignment2.SwapTitles(book1, book2)
+	//assignment1.Stud()
 }
